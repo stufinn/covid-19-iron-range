@@ -30,9 +30,12 @@ const Nav = () => {
 
   return (
     <nav className="p-6 bg-white" aria-label="Main Navigation">
-      <div className="container mx-auto flex flex-no-wrap items-center justify-between">
+      <div className="container mx-auto flex flex-wrap items-center justify-between">
         <div>
-          <Link to="/" className="flex items-center flex-shrink-0 mr-6">
+          <Link
+            to="/"
+            className="flex flex-col items-center flex-shrink-0 mr-6"
+          >
             <img
               src="//images.ctfassets.net/fbgn9bbu23ix/4peB0jSeKlCOrID2vCDlvy/3910eddbb80148115c9910ef0b0a006f/IronRange_logo.jpg"
               width="250"
