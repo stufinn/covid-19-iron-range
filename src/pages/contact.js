@@ -12,7 +12,6 @@ const ContactPage = () => {
     <Layout>
       <SiteMeta title={pageTitle} />
       <h1 className="text-2xl font-semibold">{pageTitle}</h1>
-      <h1>Does this work?</h1>
       <form
         method="post"
         name="contact"
