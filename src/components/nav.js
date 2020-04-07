@@ -11,18 +11,35 @@ const Nav = () => {
         nodes {
           siteTitle
         }
+        edges {
+          node {
+            logo {
+              file {
+                url
+              }
+            }
+          }
+        }
       }
     }
   `)
 
+  // console.log(data.siteMetadata.edges[0].node.logo.file.url)
+  const imageUrl = data.siteMetadata.edges[0].node.logo.file.url
+  console.log(imageUrl)
+
   return (
     <nav className="p-6 bg-white" aria-label="Main Navigation">
       <div className="container mx-auto flex flex-wrap items-center justify-between">
-        <div className="flex items-center flex-shrink-0 mr-6">
-          <Link to="/">
-            <span className="text-xl font-semibold tracking-tight">
+        <div>
+          <Link to="/" className="flex items-center flex-shrink-0 mr-6">
+            <img
+              src="//images.ctfassets.net/fbgn9bbu23ix/4peB0jSeKlCOrID2vCDlvy/3910eddbb80148115c9910ef0b0a006f/IronRange_logo.jpg"
+              width="250"
+            />
+            <div className="text-xl font-semibold tracking-tight">
               {data.siteMetadata.nodes[0].siteTitle}
-            </span>
+            </div>
           </Link>
         </div>
         <div className="block lg:hidden">
