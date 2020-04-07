@@ -75,6 +75,17 @@ const Layout = ({ children }) => {
         >
           stop-the-spread.dev
         </a>
+        <div>
+          Website donated by{' '}
+          <a
+            className="text-blue-700 hover:text-blue-900 text-sm no-underline hover:underline"
+            href="https://www.borealisweb.ca"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Borealis Web Development
+          </a>
+        </div>
       </footer>
     </>
   )
