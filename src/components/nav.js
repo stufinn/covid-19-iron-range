@@ -30,7 +30,7 @@ const Nav = () => {
 
   return (
     <nav className="p-6 bg-white" aria-label="Main Navigation">
-      <div className="container mx-auto flex flex-wrap items-center justify-between">
+      <div className="container mx-auto flex items-center justify-between">
         <div>
           <Link to="/" className="flex items-center flex-shrink-0 mr-6">
             <img
